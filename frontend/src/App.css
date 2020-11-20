@@ -4,6 +4,7 @@
   border: none;
   color:white;
   height:5vh;
+  transition: 0.5s;
 }
 .bouton:hover
 {
@@ -40,6 +41,8 @@
   flex-wrap: wrap;
   height: 89vh;
   overflow: auto;
+  padding-top:2em;
+  padding-bottom:2em;
 }
 
 .footer
@@ -68,8 +71,7 @@
 .barreRech
 {
   width: 15em;
-  margin:auto;
-  margin-left:3px;
+  height:1.5em;
   background-color: #3aad9f;
   border: 1px solid;
   border-radius: 10px;
@@ -77,11 +79,13 @@
   padding-right: 5px;
   border:none;
   color:white;
+  transition: 0.5s;
+  margin-left: 5px;
 }
 .barreRech:hover
 {
   background-color:#4abdaf;
-  width: 50em;
+  width: 70%;
   transition: 0.5s;
 }
 
@@ -95,4 +99,38 @@
   margin:5px;
   border-radius: 15px;
   
+}
+
+hr
+{
+  background-color: lightblue;
+}
+
+.divWidget
+{
+  display: flex;
+  justify-content: center;
+}
+
+.subDiv1
+{
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.subDiv2
+{
+  border-left: 1px solid;
+  border-color: lightblue;
+  width: 70%;
+  padding-left: 15px;
+}
+
+.bordures
+{
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: lightblue;
 }

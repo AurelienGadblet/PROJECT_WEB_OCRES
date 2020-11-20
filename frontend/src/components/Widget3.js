@@ -11,7 +11,8 @@ class Widget3 extends React.Component
     {
         return(
             <div class="Widget">
-                <p>Je suis le widget3</p>
+                <center><h1>LastFM - Tendances</h1></center>
+                <hr></hr>
             </div>
         );
     }

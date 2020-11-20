@@ -9,6 +9,19 @@ Palette couleur :
 #3aad9f Vert clair
 #4abdaf Vert plus clair
 
+_______________________________________________________________________
+
+LASTFM :
+    Application name : 	School project
+    API key :	        4934f604a95406e95dea7ba0ace62d11
+    Shared secret : 	6c56040ff22ed3d708851d4b713097ff
+    Registered to :	    AureKun
+    https://www.last.fm/api/show/user.getTopTracks
+
+_______________________________________________________________________
+
+
+
 ____________________________________
 |                                   |
 |           Journal de bord  :      |
@@ -33,3 +46,6 @@ Aurélien :
     - Footer en bas de page
     - Couleurs sur le site
     - Diverses animations css
+- Création du Widget 1
+- Modification de la nav -> Barre de recherche retirée et ajoutée au Widget 1
+- Création du 2e widget : LastFM

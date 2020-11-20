@@ -11,7 +11,9 @@ class Page_Admin extends React.Component
     {
         return(
             <div class="center">
-                <p>Salut les ennemis</p>
+                <div>
+                    <p>Page admin</p>
+                </div>
             </div>
         );
     }

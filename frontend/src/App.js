@@ -31,7 +31,7 @@ class App extends React.Component
       <div className="App">
           <Nav changer={this.changerPage} etat={this.state.dash}/>
           {this.state.dash && (
-            <Dashboard/>
+            <Dashboard />
           )}
           {this.state.admin && (
             <Page_Admin/>

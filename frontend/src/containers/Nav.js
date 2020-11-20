@@ -23,12 +23,8 @@ class Nav extends React.Component
                 <div class="element">
                     LOGO
                 </div>
-                <div class="conteneur2">
-                    <p class="element">Recherche :</p>
-                    <input type="search" class="barreRech"></input>  
-                </div>
                 <div class="element">
-        <button class="bouton" onClick={this.props.changer}>{this.afficherBouton(this.props.etat)}</button>
+                    <button class="bouton" onClick={this.props.changer}>{this.afficherBouton(this.props.etat)}</button>
                 </div>                 
             </div>
          );
