@@ -96,7 +96,7 @@
   width: 40%;
   height:auto;
   padding:5px;
-  margin:5px;
+  margin:auto;
   border-radius: 15px;
   
 }
@@ -112,25 +112,39 @@ hr
   justify-content: center;
 }
 
-.subDiv1
+.subDiv30
 {
   width: 30%;
   flex-direction: column;
   display: flex;
   justify-content: center;
+  padding : 5px;
 }
 
-.subDiv2
+.subDiv70
 {
   border-left: 1px solid;
   border-color: lightblue;
   width: 70%;
-  padding-left: 15px;
+  padding : 5px;
 }
 
-.bordures
+.subDiv50
+{
+  border-color: lightblue;
+  width: 50%;
+  padding-left: 15px;
+  padding : 5px;
+}
+
+.bordureDG
 {
   border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: lightblue;
+}
+.bordureD
+{
   border-right: 1px solid;
   border-color: lightblue;
 }

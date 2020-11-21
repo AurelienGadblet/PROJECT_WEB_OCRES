@@ -21,8 +21,6 @@ class Dashboard extends React.Component
                 <Widget2/>
                 <Widget3/>
                 <Widget4/>
-                <Widget5/>
-                <Widget6/>
             </div>
         );
     }

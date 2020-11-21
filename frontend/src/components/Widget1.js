@@ -6,40 +6,14 @@ class Widget1 extends React.Component
     {
         super(props);
         this.state = {
-            "coord": { "lon": 2.35, "lat": 48.86 },
-            "weather": [
-              { "id": 501, "main": "Clear", "description": "moderate rain", "icon": "10n" }
-            ],
-            "base": "stations",
-            "main": {
-              "temp": 15.71,
-              "pressure": 1006,
-              "humidity": 87,
-              "temp_min": 14.44,
-              "temp_max": 17.22
-            },
-            "visibility": 10000,
-            "wind": { "speed": 5.1, "deg": 210 },
-            "clouds": { "all": 100 },
-            "dt": 1571085173,
-            "sys": {
-              "type": 1,
-              "id": 6550,
-              "message": 0.0074,
-              "country": "FR",
-              "sunrise": 1571033314,
-              "sunset": 1571072670
-            },
-            "timezone": 7200,
-            "id": 2988507,
-            "name": "Paris",
-            "cod": 200
-          }
+          meteo : require('./donnees/weather.json')
+        }
+            
     }
 
     infosMeteo()
     {
-      const meteo = this.state.weather[0].main;
+      const meteo = this.state.meteo.weather[0].main;
       switch(meteo)
       {
         case 'Rain':
@@ -83,16 +57,16 @@ class Widget1 extends React.Component
                 <hr></hr>
                 <div class="divWidget">
 
-                  <div class="subDiv1"><center>
-                    <h2>Ville : {this.state.name} </h2>
+                  <div class="subDiv30"><center>
+                    <h2>Ville : {this.state.meteo.name} </h2>
                     <hr></hr>
-                    <p>Température : {this.state.main.temp}°C </p>
-                    <p> Humidité : {this.state.main.humidity}%</p>
+                    <p>Température : {this.state.meteo.main.temp}°C </p>
+                    <p> Humidité : {this.state.meteo.main.humidity}%</p>
                   </center></div>
 
-                  <div class="subDiv2"><center>
+                  <div class="subDiv70"><center>
                     <i class={this.infosMeteo()}></i>
-                    <h2>{this.state.weather[0].main}</h2>               
+                    <h2>{this.state.meteo.weather[0].main}</h2>               
                   </center></div>
                     
                 </div>
