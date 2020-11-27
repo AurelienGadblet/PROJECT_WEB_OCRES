@@ -1,10 +1,12 @@
 /// il faut installer :
 
+npm install axios
+
 /// LIEN DU TRELLO \\\
 
 https://trello.com/b/y2Nw5VQV/taches
 
-/// MEMBRES \\\
+/// MEMBRE \\\
 
 Aurélien GADBLET - TD4A
 
@@ -47,6 +49,11 @@ Get la météo du jour : https://api.openweathermap.org/data/2.5/weather?q=Paris
 
 _______________________________________________________________________
 
+CURRENCYLAYER :
+
+API KEY : 4880638d057b379bf2c9242943842af4
+Requete pour obtenir 5 valeurs : http://api.currencylayer.com/live?access_key=4880638d057b379bf2c9242943842af4&currencies=AUD,EUR,GBP,CHF,CNY
+
 
 
 ____________________________________
@@ -54,9 +61,7 @@ ____________________________________
            Journal de bord  :      
 ____________________________________
 
-/// 18/11 : Initiation du projet \\\
-
-Aurélien :
+// 18/11 : Initiation du projet \\
 
 - Fait le app.js
 - Création des containers Dashboard, Nav, Page_Admin
@@ -64,9 +69,7 @@ Aurélien :
 - Bouton cgt de page et barre de recherche de la barre de navigation
 - Mise en service du bouton changement de page, qui switch la page afichée (dash / page admin)
 
-/// 19/11 : Deuxieme jour de code \\\
-
-Aurélien :
+// 19/11 : Deuxieme jour de code \\
 
 - Creation du container Footer
 - Mise en forme du site CSS :
@@ -77,14 +80,18 @@ Aurélien :
 - Modification de la nav -> Barre de recherche retirée et ajoutée au Widget 1
 - Création du 2e widget : LastFM
 
-/// 20/11 \\\
-
-Repos
-
-/// 21/11 \\\
-
-Aurélien :
+// 21/11 \\
 
 - Création du Widget 3 --- Widget Fini
 - Modification des Widget 1 & 2 pour faciliter l'utilisation des requêtes GET
 - Création du Widget 4
+
+// 26/11 \\
+
+- Ajout des appels Axios pour les Widgets 1&2
+
+// 27/11 \\
+
+- Fix des appels API
+- Activation des barres de recherche
+- Optimisations diverses

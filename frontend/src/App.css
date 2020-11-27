@@ -42,7 +42,7 @@
   height: 89vh;
   overflow: auto;
   padding-top:2em;
-  padding-bottom:2em;
+  padding-bottom: 2em;
 }
 
 .footer
@@ -74,7 +74,8 @@
   height:1.5em;
   background-color: #3aad9f;
   border: 1px solid;
-  border-radius: 10px;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
   padding-left: 5px;
   padding-right: 5px;
   border:none;
@@ -85,7 +86,26 @@
 .barreRech:hover
 {
   background-color:#4abdaf;
-  width: 70%;
+  transition: 0.5s;
+}
+
+.btnRech
+{
+  width: 5em;
+  height:1.5em;
+  background-color: #3aad9f;
+  border: 1px solid;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border:none;
+  color:white;
+  transition: 0.5s;
+}
+.btnRech:hover
+{
+  background-color:#4abdaf;
   transition: 0.5s;
 }
 
@@ -96,7 +116,8 @@
   width: 40%;
   height:auto;
   padding:5px;
-  margin:auto;
+  margin-bottom: auto;
+  margin-top : 15px;
   border-radius: 15px;
   
 }
