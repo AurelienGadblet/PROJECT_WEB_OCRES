@@ -5,13 +5,20 @@ il faut installer :
 npm install axios
 
 ___________________
- LIEN DU TRELLO 
+LIEN DU TRELLO 
 
 
 https://trello.com/b/y2Nw5VQV/taches
 
+LIEN DE LA WIREFRAME :
+
+https://www.figma.com/proto/JCBXgF79QugzdAAUSyHFX3/Wireframe?node-id=1%3A88&scaling=scale-down 
+
+Modifier la WF :
+https://www.figma.com/file/JCBXgF79QugzdAAUSyHFX3/Wireframe?node-id=0%3A1
+
 ___________________
- MEMBRE
+MEMBRE
 
 Aurélien GADBLET - TD4A
 
@@ -20,16 +27,13 @@ A titre d'info et de rappel
 
 Palette couleur :
 
-
-  #EEE5E9 couleur boutons hover
-  #D64933 couleur nav / footer 
-  #2B303A couleur widget/bouton:hover
-  #EEE5E9 couleur lignes
-  #EEE5E9 couleur texte
-  #EEE5E9 couleur fond
+#7C7C7C couleur boutons
+#EEE5E9 couleur boutons hover / lignes / texte
+#D64933 couleur nav / footer 
+#2B303A couleur widget/bouton:hover
 
 ___________________
- LES API
+LES API
 
 
 Pour trouver l'inspiration : https://github.com/public-apis/public-apis?fbclid=IwAR2vxjbMNR81BUZ57wk1v0ySm3Q_hRiakE-9T2AoR7jwqpV97xsNq0Pz7qk
@@ -80,8 +84,8 @@ _______________________________________________________________________
 
 
 ____________________________________
-                                   
-           Journal de bord  :      
+                                
+        Journal de bord  :      
 ____________________________________
 
 
@@ -95,7 +99,7 @@ ____________________________________
 - Mise en service du bouton changement de page, qui switch la page afichée (dash / page admin)
 
 ____________________________________
- 19/11 : Deuxieme jour de code 
+19/11 : Deuxieme jour de code 
 
 
 - Creation du container Footer
@@ -138,3 +142,4 @@ ____________________________________
 - Widget6 fini
 - Création de la structure page admin -> fini
 - Utilisation des medias queries pour rendre responsive
+- Wireframe faite
