@@ -27,7 +27,6 @@ A titre d'info et de rappel
 
 Palette couleur :
 
-#7C7C7C couleur boutons
 #EEE5E9 couleur boutons hover / lignes / texte
 #D64933 couleur nav / footer 
 #2B303A couleur widget/bouton:hover
