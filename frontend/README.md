@@ -1,35 +1,36 @@
 ___________________
 il faut installer :
-___________________
+
 
 npm install axios
 
 ___________________
  LIEN DU TRELLO 
-___________________
+
 
 https://trello.com/b/y2Nw5VQV/taches
 
 ___________________
  MEMBRE
-___________________
 
 Aurélien GADBLET - TD4A
 
 ______________________________________
 A titre d'info et de rappel
-______________________________________
 
 Palette couleur :
 
-#264653 Bleu foncé
-#2a9d8f Vert
-#3aad9f Vert clair
-#4abdaf Vert plus clair
+
+  #EEE5E9 couleur boutons hover
+  #D64933 couleur nav / footer 
+  #2B303A couleur widget/bouton:hover
+  #EEE5E9 couleur lignes
+  #EEE5E9 couleur texte
+  #EEE5E9 couleur fond
 
 ___________________
  LES API
-___________________
+
 
 Pour trouver l'inspiration : https://github.com/public-apis/public-apis?fbclid=IwAR2vxjbMNR81BUZ57wk1v0ySm3Q_hRiakE-9T2AoR7jwqpV97xsNq0Pz7qk
 _______________________________________________________________________
@@ -53,20 +54,19 @@ Top Titres : http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=Aur
 Données Utilisateur : http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=AureKun&api_key=4934f604a95406e95dea7ba0ace62d11&format=json
 
 _______________________________________________________________________
-_______________________________________________________________________
 
 OPENWEATHERMAP :
 
 Get la météo du jour : https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&appid=4081444b7b90198136fefe6ed4ccf35b
 
-_______________________________________________________________________
+
 _______________________________________________________________________
 
 Foreign exchange rates API  :
 
 Requete pour obtenir 5 valeurs : https://api.exchangeratesapi.io/latest
 
-_______________________________________________________________________
+
 _______________________________________________________________________
 
 Spoontacular :
@@ -84,9 +84,9 @@ ____________________________________
            Journal de bord  :      
 ____________________________________
 
-____________________________________
+
 18/11 : Initiation du projet
-____________________________________
+
 
 - Fait le app.js
 - Création des containers Dashboard, Nav, Page_Admin
@@ -96,7 +96,7 @@ ____________________________________
 
 ____________________________________
  19/11 : Deuxieme jour de code 
- ____________________________________
+
 
 - Creation du container Footer
 - Mise en forme du site CSS :
@@ -109,7 +109,6 @@ ____________________________________
 
 ____________________________________
 21/11
-____________________________________
 
 - Création du Widget 3 --- Widget Fini
 - Modification des Widget 1 & 2 pour faciliter l'utilisation des requêtes GET
@@ -117,12 +116,12 @@ ____________________________________
 
 ____________________________________
  26/11
-____________________________________
+
 
 - Ajout des appels Axios pour les Widgets 1&2
 ____________________________________
  27/11 
-____________________________________
+
 
 - Fix des appels API
 - Activation des barres de recherche
@@ -130,9 +129,12 @@ ____________________________________
 
 ____________________________________
  28/11
-____________________________________
+
 
 - Recherche d'idée pour le 5e widget
 - Création du Widget 5
 - Widget 5 FINI
 - Création du Widget 6
+- Widget6 fini
+- Création de la structure page admin -> fini
+- Utilisation des medias queries pour rendre responsive
