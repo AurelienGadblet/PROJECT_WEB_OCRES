@@ -16,10 +16,10 @@ class Dashboard extends React.Component
     render()
     {
         return(
-            <div class= "center">
-                <Widget1/>
+            <div className= "center">
                 <Widget2/>
                 <Widget3/>
+                <Widget1/>
                 <Widget4/>
                 <Widget5/>
                 <Widget6/>

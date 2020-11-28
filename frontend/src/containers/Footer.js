@@ -11,7 +11,7 @@ class Footer extends React.Component
     render()
     {
         return(
-            <div class = "footer">
+            <div className = "footer">
                 <center>
                     <p>
                         Copyright Aurélien GADBLET TD4A <br></br>

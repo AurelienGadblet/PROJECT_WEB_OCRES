@@ -1,5 +1,6 @@
 import React from 'react';
 import {BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,} from 'recharts';
+import axios from 'axios';
 
 class Widget4 extends React.Component
 {
@@ -7,45 +8,63 @@ class Widget4 extends React.Component
     {
         super(props);
         this.state = {
-            monnaies : require('./donnees/monnaies.json'),
+            monnaies : undefined,
           }
     }
 
-    render()
+    getvalues()
     {
+        axios.get(`https://api.exchangeratesapi.io/latest`)
+        .then(res => {
+          const resultat = res.data;
+          this.setState({ monnaies: resultat});
+        });
+    }
 
-        const data = [
+    componentDidMount()
+    {
+      this.getvalues();
+    }
+
+    render=()=>
+    {
+        console.log(this.state.monnaies);
+        let data;
+        !!this.state.monnaies && (data = [
             {
-              name: 'AUD', valeur: this.state.monnaies.quotes.USDAUD,
+              name: 'AUD', valeur: this.state.monnaies.rates.CAD,
             },
             {
-              name: 'EUR', valeur: this.state.monnaies.quotes.USDEUR,
+              name: 'USD', valeur: this.state.monnaies.rates.USD,
             },
             {
-              name: 'GBP', valeur: this.state.monnaies.quotes.USDGBP,
+              name: 'GBP', valeur: this.state.monnaies.rates.GBP,
             },
             {
-              name: 'CHF', valeur: this.state.monnaies.quotes.USDCHF,
+              name: 'CHF', valeur: this.state.monnaies.rates.CHF,
             },
             {
-              name: 'CNY', valeur: this.state.monnaies.quotes.USDCNY,
+              name: 'CNY', valeur: this.state.monnaies.rates.CNY,
             },
-          ];
+          ]);
 
         return(
 
             <div class="Widget">
-                <center><h1>Parité des Devises :</h1></center>
+                <center><button onClick={()=>this.getvalues()} className ="btnRefresh"><h1>Parité des Devises :</h1></button></center>
                 <hr></hr>
                 <center>
-                    <h2>Monnaie de référence : USD</h2>
-                    <BarChart width={500} height={300} data={data} margin={{top: 5, right: 0, left: 0, bottom: 5,}}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Bar dataKey="valeur" fill="#3aad9f" />
-                    </BarChart>
+                    <h2>Monnaie de référence : Euro</h2>
+                    <div>
+                      <BarChart width={300} height={200} data={data} margin={{top: 5, right: 0, left: 0, bottom: 5,}}>
+                          <CartesianGrid strokeDasharray="3 3" />
+                          <XAxis dataKey="name" />
+                          <YAxis />
+                          <Tooltip />
+                          <Bar dataKey="valeur" fill="#D64933" />
+                      </BarChart>
+                    </div> 
+                    
                 </center>
             </div>
         );

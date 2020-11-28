@@ -1,3 +1,38 @@
-{"weather":[
-    {"coord":{"lon":2.35,"lat":48.85},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":10.05,"feels_like":6.97,"temp_min":9,"temp_max":11.11,"pressure":1031,"humidity":76},"visibility":10000,"wind":{"speed":3.1,"deg":250},"clouds":{"all":20},"dt":1605971995,"sys":{"type":1,"id":6550,"country":"FR","sunrise":1605942562,"sunset":1605974646},"timezone":3600,"id":2988507,"name":"Paris","cod":200},
-    {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":8.34,"feels_like":5.82,"temp_min":7.78,"temp_max":9,"pressure":1021,"humidity":70},"visibility":10000,"wind":{"speed":1.5,"deg":0},"clouds":{"all":37},"dt":1606405905,"sys":{"type":1,"id":1414,"country":"GB","sunrise":1606376236,"sunset":1606406340},"timezone":0,"id":2643743,"name":"London","cod":200}]}
+{"weather":
+    {
+        "coord":{
+            "lon":2.35,
+            "lat":48.85
+        },
+        "weather":[{
+            "id":801,
+            "main":"Clouds",
+            "description":"few clouds",
+            "icon":"02d"
+        }],
+        "base":"stations",
+        "main":{
+            "temp":10.05,
+            "feels_like":6.97,
+            "temp_min":9,
+            "temp_max":11.11,
+            "pressure":1031,
+            "humidity":76
+        },
+        "visibility":10000,
+        "wind":{"speed":3.1,"deg":250},
+        "clouds":{"all":20},
+        "dt":1605971995,
+        "sys":{
+            "type":1,
+            "id":6550,
+            "country":"FR",
+            "sunrise":1605942562,
+            "sunset":1605974646
+        },
+        "timezone":3600,
+        "id":2988507,
+        "name":"Paris",
+        "cod":200
+    }
+ }

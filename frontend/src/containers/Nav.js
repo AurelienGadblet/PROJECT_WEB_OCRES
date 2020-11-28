@@ -19,12 +19,12 @@ class Nav extends React.Component
     render()
     {
         return(
-            <div class = "nav">
+            <div className = "nav">
                 <div class="element">
                     LOGO
                 </div>
-                <div class="element">
-                    <button class="bouton" onClick={this.props.changer}>{this.afficherBouton(this.props.etat)}</button>
+                <div className="element">
+                    <button className="bouton" onClick={this.props.changer}>{this.afficherBouton(this.props.etat)}</button>
                 </div>                 
             </div>
          );

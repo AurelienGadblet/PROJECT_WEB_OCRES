@@ -8,8 +8,7 @@ class Widget1 extends React.Component
         super(props);
         this.state = {
           recherche: 'Paris',
-          affichage: false,
-          meteo : [],
+          meteo : undefined,
         }         
     }
 
@@ -23,23 +22,16 @@ class Widget1 extends React.Component
       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.recherche}&units=metric&appid=4081444b7b90198136fefe6ed4ccf35b`)
       .then(res => {
         const nvmeteo = res.data;
-        let affichageok;
-        if(nvmeteo==null)
-          affichageok = false;
-        else
-          affichageok = true;
         this.setState({ meteo: nvmeteo });
-        this.setState({ affichage: affichageok });
       })
     }
 
     infosMeteo()
     {
       let meteo;
-      if(this.state.affichage == true)
-         meteo = this.state.meteo.weather[0].main;
-      else
-         meteo = 4;
+      
+      !!this.state.meteo && (meteo = this.state.meteo.weather[0].main);
+
       switch(meteo)
       {
         case 'Rain':
@@ -76,35 +68,38 @@ class Widget1 extends React.Component
       this.getmeteo();
     }
 
-    render()
+    render=()=>
     {
         return(
-            <div class="Widget">
+            <div className="Widget">
                 <center><h1>Météo du jour</h1></center>
-                <div class="divWidget">
-                    <input type="text" class="barreRech" value = {this.state.recherche} onChange={(e)=>this.termeRecherche(e)} ></input>
-                    <button class ="btnRech" onClick={()=>this.getmeteo()}>Recherche</button>
+                <div className="divWidget">
+                    <input type="text" className="barreRech" value = {this.state.recherche} onChange={(e)=>this.termeRecherche(e)} onKeyPress={(e)=>{if(e.key=='Enter')this.getmeteo()}}></input>
+                    <button className ="btnRech" onClick={()=>this.getmeteo()}>Recherche</button>
                 </div>
-                <hr></hr>
-                <div class="divWidget">
+                <hr></hr>  
+                <div className="divWidget">
 
-                  <div class="subDiv30"><center>
-                    {this.state.affichage && (<h2>Ville : {this.state.meteo.name} </h2>)}
+                  <div className="subDiv50 bordureD"><center>
+                    {!!this.state.meteo && (<>
+                    <h2>Ville : {this.state.meteo.name} </h2>
                     
                     <hr></hr>
-                    {this.state.affichage && (<p>Température : {this.state.meteo.main.temp}°C </p>)}
+                    <p>Température : {this.state.meteo.main.temp}°C </p>
                     
-                    {this.state.affichage && (<p> Humidité : {this.state.meteo.main.humidity}%</p>)}
-                    
+                    <p> Humidité : {this.state.meteo.main.humidity}%</p>
+                    </>)}
                   </center></div>
 
-                  <div class="subDiv70"><center>
-                    <i class={this.infosMeteo()}></i>
-                    {this.state.affichage && (<h2>{this.state.meteo.weather[0].main}</h2>   )}
-                                
+                  <div className="subDiv50"><center>
+                  {!!this.state.meteo && (<>
+                    <i className={this.infosMeteo()}></i>
+                    <h2>{this.state.meteo.weather[0].main}</h2>  
+                    </>)}           
                   </center></div>
                     
                 </div>
+                
             </div>
         );
     }
