@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 
 class Page_Admin extends React.Component
 {
@@ -58,7 +59,11 @@ class Page_Admin extends React.Component
                     </div>
                     <p>Description : </p>
                     <textarea className="inputAdmin2" value = {this.state.description} onChange={(e)=>this.updescription(e)}></textarea>
+                    
                 </div>
+                <div className="footerBas">
+                </div>
+                
             </div>
         );
     }

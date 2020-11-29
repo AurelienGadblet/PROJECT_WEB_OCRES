@@ -30,37 +30,8 @@ class Widget1 extends React.Component
     {
       let meteo;
       
-      !!this.state.meteo && (meteo = this.state.meteo.weather[0].main);
-
-      switch(meteo)
-      {
-        case 'Rain':
-          return "fas fa-cloud-showers-heavy fa-8x";
-          break;
-        case 'Clear':
-          return "fas fa-sun fa-8x";
-          break;
-        case 'Clouds':
-          return "fas fa-cloud fa-8x";
-          break;
-        case 'Atmosphere':
-          return "fas fa-cloud-rain fa-8x";
-          break;
-        case 'Snow':
-          return "fas fa-snowflake fa-8x";
-          break;
-        case 'Drizzle':
-          return "fas fa-smog fa-8x";
-          break;
-        case 'Thunderstorm':
-          return "fas fa-bolt fa-8x";
-          break;
-        default:
-          return"fas fa-eyes-slash fa-8x";
-          break;
-      }
-
-      
+      !!this.state.meteo && (meteo = this.state.meteo.weather[0].icon);
+      return('http://openweathermap.org/img/wn/'+meteo+'@2x.png')
     }
 
     componentDidMount()
@@ -93,7 +64,7 @@ class Widget1 extends React.Component
 
                   <div className="subDiv50"><center>
                   {!!this.state.meteo && (<>
-                    <i className={this.infosMeteo()}></i>
+                    <img src={this.infosMeteo()}></img>
                     <h2>{this.state.meteo.weather[0].main}</h2>  
                     </>)}           
                   </center></div>

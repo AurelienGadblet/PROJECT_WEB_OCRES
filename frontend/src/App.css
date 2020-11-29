@@ -102,7 +102,6 @@
 {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .btnRech
@@ -253,6 +252,11 @@ hr
 
 /*Pour le widget6 */
 
+.wrap
+{
+  flex-wrap: wrap;
+}
+
 .imgRecette
 {
   height: auto;
@@ -316,7 +320,7 @@ hr
     background-color: var(--Couleur3);
     color: var(--Couleur2);
     font-size: .8em;
-    height:7vh;
+    height:5em;
     position: absolute;
     bottom: 0;
   }
@@ -327,9 +331,8 @@ hr
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 88vh;
+    height: 89vh;
     overflow: auto;
-    padding-bottom: 7vh;
     background-color: var(--Couleur2);
   }
   .barreRech
@@ -382,12 +385,6 @@ hr
      background-color: var(--Couleur2);
    }
 
-  /*Pour le footer*/
-
-  .footer
-  {
-    height:0;
-  }
 
   .barreRech
   {
@@ -424,12 +421,6 @@ hr
     border-radius: 15px;
     font-size: 1em;
   }
-  /*Pour le footer*/
-
-  .footer
-  {
-    height:0;
-  }
 
    /* Pour le Dashboard*/
 
@@ -443,6 +434,7 @@ hr
      padding-bottom: 2em;
      background-color: var(--Couleur2);
    }
+   
   .barreRech
   {
     width: 7em;

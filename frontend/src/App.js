@@ -35,8 +35,8 @@ class App extends React.Component
           )}
           {this.state.admin && (
             <Page_Admin/>
-          )}          
-        <Footer/>
+          )}
+          <Footer/>
       </div>
     );
   }

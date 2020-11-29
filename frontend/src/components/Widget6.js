@@ -30,7 +30,7 @@ class Widget6 extends React.Component
         return(
             <div class="Widget">
                 <center><h1>Tâches à réaliser</h1></center>
-                <div className="divWidget">
+                <div className="divWidget wrap">
                     <input type="text" className="barreRech2" value = {this.state.jour}  ></input>
                     <input type="text" className="barreRech2" value = {this.state.mois}  ></input>
                     <input type="text" className="barreRech2" value = {this.state.annee}  ></input>

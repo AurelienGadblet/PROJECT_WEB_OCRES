@@ -142,3 +142,10 @@ ____________________________________
 - Création de la structure page admin -> fini
 - Utilisation des medias queries pour rendre responsive
 - Wireframe faite
+
+___________________________________
+29/11
+
+- Ajout d'un screenshot de la wireframe
+- Ajout des fichiers stories
+- Quelques bugfix
