@@ -13,8 +13,7 @@
   border: none;
   color:var(--Couleur2);
   height:3em;
-  width: 10em;
-  margin-right:1vh;
+  width: 30%;
   transition: 0.5s;
 }
 .boutonAdmin:hover
@@ -30,8 +29,7 @@
   border: none;
   color:var(--Couleur2);
   height:3em;
-  width: 20em;
-  margin-right:1vh;
+  width: 80%;
   transition: 0.5s;
 }
 .inputAdmin:hover
@@ -47,8 +45,7 @@
   border: none;
   color:var(--Couleur2);
   height:10em;
-  width: 100%;
-  margin-right:1vh;
+  width: 80%;
   transition: 0.5s;
 }
 .inputAdmin2:hover
@@ -56,6 +53,29 @@
   text-decoration: bold;
   background-color:var(--Couleur4);
   transition: 0.5s;
+}
+
+.Formulaire
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.typeDevoir
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  width:80%;
+}
+
+.champAjout
+{
+  width:100%;
+  margin-top: 8px;
 }
 
 /*Pour la nav*/
@@ -356,6 +376,10 @@ hr
     transition: 0.5s;
     color:var(--Couleur4);
   }
+  .pageAjout
+  {
+    width:40%;
+  }
 }
 
 @media(max-aspect-ratio: 4/3) and (min-aspect-ratio: 2/3)
@@ -405,6 +429,10 @@ hr
     background-color:var(--Couleur2);
     transition: 0.5s;
   }
+  .pageAjout
+  {
+    width:70%;
+  }
 }
 
 @media(max-aspect-ratio: 2/3)
@@ -453,5 +481,10 @@ hr
   {
     background-color:var(--Couleur2);
     transition: 0.5s;
+  }
+
+  .pageAjout
+  {
+    width:100%;
   }
 }
