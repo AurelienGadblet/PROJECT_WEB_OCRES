@@ -21,7 +21,7 @@ class Nav extends React.Component
         return(
             <div className = "nav">
                 <div className="element">
-                    LOGO
+                    ダスボド
                 </div>
                 <div className="element">
                     <button className="bouton" onClick={this.props.changer}>{this.afficherBouton(this.props.etat)}</button>
