@@ -1,9 +1,10 @@
 /*Definition des couleurs*/
 :root
 {
-  --Couleur2: #EEE5E9;/*couleur boutons hover*/
-  --Couleur3: #D64933;/*couleur nav / footer */
-  --Couleur4: #2B303A;/*couleur widget/bouton:hover*/
+  --Couleur1: #494D4D;/*couleur de fond*/
+  --Couleur2: #E9AFA3;/*couleur boutons hover*/
+  --Couleur3: #202424;/*couleur nav / footer */
+  --Couleur4: #242828;/*couleur widget/bouton:hover*/
 }
 /*Pour la page admin*/
 
@@ -353,7 +354,7 @@ hr
     flex-wrap: wrap;
     height: 89vh;
     overflow: auto;
-    background-color: var(--Couleur2);
+    background-color: var(--Couleur1);
   }
   .barreRech
   {
@@ -406,7 +407,7 @@ hr
      height: 95vh;
      overflow: auto;
      padding-bottom: 2em;
-     background-color: var(--Couleur2);
+     background-color: var(--Couleur1);
    }
 
 
@@ -460,7 +461,7 @@ hr
      height: 95vh;
      overflow: auto;
      padding-bottom: 2em;
-     background-color: var(--Couleur2);
+     background-color: var(--Couleur1);
    }
    
   .barreRech
