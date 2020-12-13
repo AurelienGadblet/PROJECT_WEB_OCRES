@@ -149,3 +149,18 @@ ___________________________________
 - Ajout d'un screenshot de la wireframe
 - Ajout des fichiers stories
 - Quelques bugfix
+
+____________________________________
+13/12
+
+- API finie
+- BDD finie
+- Lien bdd / front fait
+- Correction de bugs
+- Aider les camarades
+
+___________________________________
+14/12
+
+- Ajout de blindages sur le Widget 2 pour eviter les bugs
+- Pre-remplissage de certains champs dans la page admin
