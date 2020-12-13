@@ -60,7 +60,7 @@ class Widget4 extends React.Component
                           <XAxis dataKey="name" />
                           <YAxis />
                           <Tooltip />
-                          <Bar dataKey="valeur" fill="#D64933" />
+                          <Bar dataKey="valeur" fill="#ECB3A8" />
                       </BarChart>
                     </div> 
                     
