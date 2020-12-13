@@ -20,7 +20,7 @@ class Nav extends React.Component
     {
         return(
             <div className = "nav">
-                <div class="element">
+                <div className="element">
                     LOGO
                 </div>
                 <div className="element">
