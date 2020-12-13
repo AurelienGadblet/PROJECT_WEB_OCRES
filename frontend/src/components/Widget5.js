@@ -40,11 +40,11 @@ class Widget5 extends React.Component
         let liste = [];
         for(let i = 0; i<this.state.recettes[a].usedIngredientCount;i++)
         {
-            liste.push(<Ingredients text={this.state.recettes[a].usedIngredients[i].original}/>);
+            liste.push(<Ingredients key ={2000+i} text={this.state.recettes[a].usedIngredients[i].original}/>);
         }
         for(let i = 0; i<this.state.recettes[a].missedIngredientCount;i++)
         {
-            liste.push(<Ingredients text={this.state.recettes[a].missedIngredients[i].original}/>);
+            liste.push(<Ingredients key ={i} text={this.state.recettes[a].missedIngredients[i].original}/>);
         }
         return (<div>{liste}</div>);
     }
@@ -56,9 +56,8 @@ class Widget5 extends React.Component
 
     render=()=>
     {
-        console.log(this.state.recettes)
         return(
-            <div class="Widget">
+            <div className="Widget">
                 <center><h1>Idées de recettes</h1></center>
                 <div className="divWidget">
                     <input type="text" className="barreRech2" value = {this.state.igt1} onChange={(e)=>this.termeRecherche1(e)} ></input>

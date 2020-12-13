@@ -36,7 +36,7 @@ class Widget3 extends React.Component
     render=()=>
     {
         return(
-            <div class="Widget">
+            <div className="Widget">
                 <center><button onClick={()=>this.gettrend()} className ="btnRefresh"><h1>LastFM - Tendances</h1></button></center>
                 <hr></hr>
                 <div>

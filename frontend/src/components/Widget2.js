@@ -73,57 +73,63 @@ class Widget2 extends React.Component
                 <div>
                   <center><h2>Top 5 Titres :</h2></center>
                   {!!this.state.topTitle && (<>
-                    <div className="morceau">
+                    {!!this.state.topTitle.toptracks.track[0] && (<><div className="morceau">
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[0].name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[0].artist.name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[0].playcount} écoutes</p>
-                    </div>
-                    <div className="morceau">
+                    </div></>)}
+
+                    {!!this.state.topTitle.toptracks.track[1] && (<><div className="morceau">
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[1].name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[1].artist.name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[1].playcount} écoutes</p>
-                    </div>
-                    <div className="morceau">
+                    </div></>)}
+
+                    {!!this.state.topTitle.toptracks.track[2] && (<><div className="morceau">
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[2].name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[2].artist.name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[2].playcount} écoutes</p>
-                    </div>
-                    <div className="morceau">
+                    </div></>)}
+
+                    {!!this.state.topTitle.toptracks.track[3] && (<><div className="morceau">
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[3].name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[3].artist.name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[3].playcount} écoutes</p>
-                    </div>
-                    <div className="morceau">
+                    </div></>)}
+
+                    {!!this.state.topTitle.toptracks.track[4] && (<><div className="morceau">
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[4].name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[4].artist.name}</p>
                       <p className="informationMorceau">{this.state.topTitle.toptracks.track[4].playcount} écoutes</p>
-                    </div>
+                    </div></>)}
+
                   </>)}     
               </div>
               <hr></hr>
               <div>                    
                 <center><h2>Top 5 Artistes :</h2></center>
                 {!!this.state.topArtist && (<>
-                <div className="morceau">
+                
+                  {!!this.state.topArtist.topartists.artist[0] && (<><div className="morceau">
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[0].name}</p>
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[0].playcount} écoutes</p>
-                </div>
-                <div className="morceau">
+                </div></>)}
+                {!!this.state.topArtist.topartists.artist[1] && (<><div className="morceau">
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[1].name}</p>
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[1].playcount} écoutes</p>
-                </div>
-                <div className="morceau">
+                </div></>)}
+                {!!this.state.topArtist.topartists.artist[2] && (<><div className="morceau">
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[2].name}</p>
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[2].playcount} écoutes</p>
-                </div>
-                <div className="morceau">
+                </div></>)}
+                {!!this.state.topArtist.topartists.artist[3] && (<><div className="morceau">
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[3].name}</p>
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[3].playcount} écoutes</p>
-                </div>
-                <div className="morceau">
+                </div></>)}
+                {!!this.state.topArtist.topartists.artist[4] && (<><div className="morceau">
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[4].name}</p>
                   <p className="informationMorceau">{this.state.topArtist.topartists.artist[4].playcount} écoutes</p>
-                </div>
+                </div></>)}
                 
                 
                 </>)}

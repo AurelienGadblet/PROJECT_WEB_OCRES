@@ -1,5 +1,5 @@
 import React from 'react';
-import {BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,} from 'recharts';
+import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
 import axios from 'axios';
 
 class Widget4 extends React.Component
@@ -28,7 +28,6 @@ class Widget4 extends React.Component
 
     render=()=>
     {
-        console.log(this.state.monnaies);
         let data;
         !!this.state.monnaies && (data = [
             {
@@ -50,7 +49,7 @@ class Widget4 extends React.Component
 
         return(
 
-            <div class="Widget">
+            <div className="Widget">
                 <center><button onClick={()=>this.getvalues()} className ="btnRefresh"><h1>Parité des Devises :</h1></button></center>
                 <hr></hr>
                 <center>

@@ -34,7 +34,7 @@ class Widget1 extends React.Component
       return('http://openweathermap.org/img/wn/'+meteo+'@2x.png')
     }
 
-    componentDidMount()
+    componentWillMount()
     {
       this.getmeteo();
     }
@@ -48,7 +48,8 @@ class Widget1 extends React.Component
                     <input type="text" className="barreRech" value = {this.state.recherche} onChange={(e)=>this.termeRecherche(e)} onKeyPress={(e)=>{if(e.key=='Enter')this.getmeteo()}}></input>
                     <button className ="btnRech" onClick={()=>this.getmeteo()}>Recherche</button>
                 </div>
-                <hr></hr>  
+                <hr></hr>
+                  
                 <div className="divWidget">
 
                   <div className="subDiv50 bordureD"><center>
