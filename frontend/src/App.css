@@ -11,8 +11,9 @@
 .boutonAdmin
 {
   background-color: var(--Couleur3);
-  border: none;
+  border: 1px solid;
   color:var(--Couleur2);
+  border-radius: 5px;
   height:3em;
   width: 30%;
   transition: 0.5s;
@@ -20,13 +21,15 @@
 .boutonAdmin:hover
 {
   text-decoration: bold;
-  background-color:var(--Couleur4);
+  background-color:var(--Couleur2);
+  color:var(--Couleur3);
   transition: 0.5s;
 }
 
 .inputAdmin
 {
   background-color: var(--Couleur3);
+  
   border: none;
   color:var(--Couleur2);
   height:3em;
@@ -79,6 +82,11 @@
   margin-top: 8px;
 }
 
+.couleurTitre
+{
+  color: var(--Couleur2);
+}
+
 /*Pour la nav*/
 
 .bouton
@@ -92,7 +100,9 @@
 .bouton:hover
 {
   text-decoration: bold;
-  background-color:var(--Couleur4);
+  border-radius: 5px;
+  background-color:var(--Couleur2);
+  color:var(--Couleur3);
   transition: 0.5s;
 }
 
@@ -130,12 +140,12 @@
   height:3em;
   width: 8em;
   background-color: var(--Couleur3);
-  border: none;
-  border-top-right-radius:10px;
-  border-bottom-right-radius:10px;
+  border:1px solid;
+  border-color:var(--Couleur2); ;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
   padding-left: 5px;
   padding-right: 5px;
-  border:none;
   color:var(--Couleur2);
   transition: 0.5s;
 }
@@ -149,10 +159,10 @@
 .btnRefresh
 {
   background-color: var(--Couleur3);
-  border-radius:10px;
+  border-radius:5px;
   padding-left: 5px;
   padding-right: 5px;
-  border:none;
+  border:1px solid;
   color:var(--Couleur2);
   transition: 0.5s;
 }
@@ -178,7 +188,6 @@
   border-radius:5px;
   padding-left: 5px;
   padding-right: 5px;
-  border:none;
   color:var(--Couleur2);
   transition: 0.5s;
   margin-right: 5px;
@@ -200,7 +209,6 @@
   border-radius:5px;
   padding-left: 5px;
   padding-right: 5px;
-  border:none;
   color:var(--Couleur2);
   transition: 0.5s;
 }
@@ -362,11 +370,11 @@ hr
     height:3em;
     background-color: var(--Couleur3);
     border: 1px solid;
+    border-right:none;
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
     padding-left: 5px;
     padding-right: 5px;
-    border:none;
     color:var(--Couleur2);
     transition: 0.5s;
     margin-left: 5px;
@@ -420,7 +428,8 @@ hr
     border-bottom-left-radius:5px;
     padding-left: 5px;
     padding-right: 5px;
-    border:none;
+    border: 1px solid;
+    border-right:none;
     color:var(--Couleur2);
     transition: 0.5s;
     margin-left: 5px;
@@ -473,7 +482,8 @@ hr
     border-bottom-left-radius:5px;
     padding-left: 5px;
     padding-right: 5px;
-    border:none;
+    border: 1px solid;
+    border-right:none;
     color:var(--Couleur2);
     transition: 0.5s;
     margin-left: 5px;
