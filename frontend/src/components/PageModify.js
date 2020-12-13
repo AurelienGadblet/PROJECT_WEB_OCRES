@@ -78,7 +78,7 @@ class PageModify extends React.Component
                 <div className="pageAjout">
                     <center>
                         <div className="champAjout">
-                            <h1>Modifier un devoir</h1>
+                            <h1  className="couleurTitre">Modifier un devoir</h1>
                             <input type="text" className="inputAdmin" value = {this.state.id} onChange={(e)=>this.upId(e)} placeholder="Entrer l'id de l'élément à modifier"></input>
                         </div>
 

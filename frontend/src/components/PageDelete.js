@@ -36,7 +36,7 @@ class PageDelete extends React.Component
                 <div className="pageAjout">
                     <center>
                         <div className="champAjout">
-                            <h1>Supprimer un devoir</h1>
+                            <h1  className="couleurTitre">Supprimer un devoir</h1>
                             <input type="text" className="inputAdmin" value = {this.state.id} onChange={(e)=>this.upId(e)} placeholder="Entrer l'id de l'élément à supprimer'"></input>
                         </div>
                         <div className="champAjout">

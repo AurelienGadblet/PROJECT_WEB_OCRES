@@ -73,7 +73,7 @@ class PageAjout extends React.Component
                 <div className="pageAjout">
                     <center>
                         <div className="champAjout">
-                            <h1>Ajouter un devoir</h1>                            
+                            <h1 className="couleurTitre">Ajouter un devoir</h1>                            
                         </div>
 
                         <div className="champAjout">
